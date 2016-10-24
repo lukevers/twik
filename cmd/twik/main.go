@@ -2,15 +2,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/lukevers/twik"
+	"golang.org/x/crypto/ssh/terminal"
 	"io"
 	"io/ioutil"
 	"os"
 	"reflect"
 	"strings"
-
-	"code.google.com/p/go.crypto/ssh/terminal"
-
-	"gopkg.in/twik.v1"
 )
 
 func main() {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/lukevers/twik"
 	. "gopkg.in/check.v1"
-	"gopkg.in/twik.v1"
 )
 
 func Test(t *testing.T) { TestingT(t) }
@@ -243,7 +243,6 @@ var evalList = []struct {
 		5.0,
 	},
 
-
 	// ==
 	{
 		`(== "a" "a")`,
@@ -297,7 +296,6 @@ var evalList = []struct {
 		`(!=)`,
 		errorf("twik source:1:2: != takes two values"),
 	},
-
 
 	// or
 	{
@@ -482,9 +480,8 @@ var evalList = []struct {
 		12,
 	}, {
 		`(var l ()) (range (i e) (list "A" "B" "C") (set l (append l i e))) l`,
-		[]interface {}{0, "A", 1, "B", 2, "C"},
+		[]interface{}{0, "A", 1, "B", 2, "C"},
 	},
-
 
 	// calling of custom functions
 	{

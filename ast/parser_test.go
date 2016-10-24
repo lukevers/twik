@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/kr/pretty"
+	"github.com/lukevers/twik/ast"
 	. "gopkg.in/check.v1"
-	"gopkg.in/twik.v1/ast"
 )
 
 func Test(t *testing.T) { TestingT(t) }

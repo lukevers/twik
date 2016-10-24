@@ -1,7 +1,7 @@
 package twik
 
 import (
-	"gopkg.in/twik.v1/ast"
+	"github.com/lukevers/twik/ast"
 )
 
 // NewFileSet returns a new FileSet to hold positioning information
@@ -27,4 +27,3 @@ func Parse(fset *ast.FileSet, name string, code []byte) (ast.Node, error) {
 func ParseString(fset *ast.FileSet, name string, code string) (ast.Node, error) {
 	return ast.ParseString(fset, name, string(code))
 }
-
